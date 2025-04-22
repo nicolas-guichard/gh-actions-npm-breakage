@@ -1,0 +1,10 @@
+name: npm breakage reproducer
+
+on:
+  push:
+
+jobs:
+  reproduce:
+    runs-on: ubuntu-24.04
+    steps:
+      - run: sudo apt install -y npm
