@@ -8,5 +8,5 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - run: sudo apt-get update
-      - run: sudo apt-get dist-upgrade
+      - run: sudo apt-get --allow-change-held-packages dist-upgrade
       - run: sudo apt-get install -y npm
